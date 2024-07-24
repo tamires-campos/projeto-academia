@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Treino da Academia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Treino da Academia</h1>
+        <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#segunda">Segunda-feira</a></li>
+            <li><a href="#terca">Terça-feira</a></li>
+            <li><a href="#quarta">Quarta-feira</a></li>
+            <li><a href="#quinta">Quinta-feira</a></li>
+            <li><a href="#sexta">Sexta-feira</a></li>
+            <li><a href="#sabado">Sábado</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- SEGUNDA -->
+        <section id="segunda" class="workout">
+            <h2>Segunda-feira - Peito e Tríceps</h2>
+            <div class="exercise">
+                <img src="imagens/supino.jpeg" alt="Imagem do Supino">
+                <div class="details">
+                    <h3>Supino Reto com barra ou halteres</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-supino" type="number" placeholder="kg">
+                    <button onclick="updateLoad('supino')">Definir</button></p>
+                    <p id="display-supino">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+
+        <!-- TERÇA -->
+        <section id="terca" class="workout">
+            <h2>Terça-feira - Pernas e Abdômen</h2>
+            <!-- EXERCÍCIOS -->
+            <div class="exercise">
+                <img src="imagens/agachamento.jpeg" alt="Imagem do agachamento">
+                <div class="details">
+                    <h3>Agachamento Livre</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-agachamento" type="number" placeholder="kg">
+                    <button onclick="updateLoad('agachamento')">Definir</button></p>
+                    <p id="display-agachamento">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/leg-press.jpeg" alt="Imagem do leg-press">
+                <div class="details">
+                    <h3>Leg press</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-leg-press" type="number" placeholder="kg">
+                    <button onclick="updateLoad('leg-press')">Definir</button></p>
+                    <p id="display-leg-press">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/cadeira-extensora.jpeg" alt="Imagem da cadeira-extensora">
+                <div class="details">
+                    <h3>Cadeira Extensora</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-agachamento" type="number" placeholder="kg">
+                    <button onclick="updateLoad('cadeira-extensora')">Definir</button></p>
+                    <p id="display-cadeira-extensora">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/cadeira-flexora.jpeg" alt="Imagem da cadeira-flexora">
+                <div class="details">
+                    <h3>Cadeira Flexora</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-cadeira-flexora" type="number" placeholder="kg">
+                    <button onclick="updateLoad('cadeira-flexora')">Definir</button></p>
+                    <p id="display-cadeira-flexora">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/panturrilha-maquina.jpeg" alt="Imagem da panturrilha-maquina">
+                <div class="details">
+                    <h3>Elevação de Panturrilha no Aparelho</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-panturrilha-maquina" type="number" placeholder="kg">
+                    <button onclick="updateLoad('panturrilha-maquina')">Definir</button></p>
+                    <p id="display-panturrilha-maquina">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/abdominal-tradicional.jpeg" alt="Imagem do abdominal-tradicional">
+                <div class="details">
+                    <h3>Abidominal Tradicional</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-abdominal-tradicional" type="number" placeholder="kg">
+                    <button onclick="updateLoad('abdominal-tradicional')">Definir</button></p>
+                    <p id="display-abdominal-tradicional">Carga atual: N/D</p>
+                </div>
+            </div>
+            <div class="exercise">
+                <img src="imagens/prancha.jpeg" alt="Imagem da prancha">
+                <div class="details">
+                    <h3>Isometria na Prancha</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-prancha" type="number" placeholder="kg">
+                    <button onclick="updateLoad('prancha')">Definir</button></p>
+                    <p id="display-prancha">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+        <!-- QUARTA -->
+        <section id="quarta" class="workout">
+            <h2>Quarta-feira - Costas e Bíceps</h2>
+            <div class="exercise">
+                <img src="imagens/puxada-frontal-na-polia.jpeg" alt="Imagem da puxada-frontal-na-polia">
+                <div class="details">
+                    <h3>Puxada Frontal na polia</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-puxada-frontal" type="number" placeholder="kg">
+                    <button onclick="updateLoad('puxada-frontal')">Definir</button></p>
+                    <p id="display-puxada-frontal">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+        <!-- QUINTA -->
+        <section id="quinta" class="workout">
+            <h2>Quinta-feira - Ombros e Trapézio</h2>
+            <div class="exercise">
+                <img src="imagens/desenvolvimento-de-ombro.jpeg" alt="Imagem do desenvolvimento-de-ombro">
+                <div class="details">
+                    <h3>Desenvolvimento de Ombros com Halteres</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-desenvolvimento-de-ombro" type="number" placeholder="kg">
+                    <button onclick="updateLoad('desenvolvimento-de-ombro')">Definir</button></p>
+                    <p id="display-desenvolvimento-de-ombro">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+        <!-- SEXTA -->
+        <section id="sexta" class="workout">
+            <h2>Sexta-feira - Full Body (Corpo Inteiro)</h2>
+            <div class="exercise">
+                <img src="imagens/burpees.jpeg" alt="Imagem dos burpees">
+                <div class="details">
+                    <h3>Burpees</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-burpees" type="number" placeholder="kg">
+                    <button onclick="updateLoad('burpees')">Definir</button></p>
+                    <p id="display-burpees">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+        <!-- SÁBADO -->
+        <section id="sabado" class="workout">
+            <h2>Sábado - Full Body (Corpo Inteiro)</h2>
+            <div class="exercise">
+                <img src="imagens/burpees.jpeg" alt="Imagem dos burpees">
+                <div class="details">
+                    <h3>Burpees</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-sabado-burpees" type="number" placeholder="kg">
+                    <button onclick="updateLoad('sabado-burpees')">Definir</button></p>
+                    <p id="display-sabado-burpees">Carga atual: N/D</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Treino da Academia</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Recupera a carga armazenada para cada exercício, se existir
+            const exercises = [
+                'supino',
+                'agachamento',
+                'puxada-frontal',
+                'desenvolvimento-de-ombro',
+                'burpees',
+                'sabado-burpees',
+                'leg-press',
+                'cadeira-extensora',
+                'cadeira-flexora',
+                'panturrilha-maquina',
+                'abdominal-tradicional',
+                'prancha'
+            ];
+            
+            exercises.forEach(exercise => {
+                const savedLoad = localStorage.getItem('load-' + exercise);
+                if (savedLoad) {
+                    document.getElementById('load-' + exercise).value = savedLoad;
+                    document.getElementById('display-' + exercise).textContent = `Carga atual: ${savedLoad} kg`;
+                }
+            });
+        });
+
+        function updateLoad(exercise) {
+            const loadInput = document.getElementById('load-' + exercise);
+            const newLoad = loadInput.value;
+            const displayElement = document.getElementById('display-' + exercise);
+            if (newLoad) {
+                displayElement.textContent = `Carga atual: ${newLoad} kg`;
+                // Salva a nova carga no Local Storage
+                localStorage.setItem('load-' + exercise, newLoad);
+            } else {
+                displayElement.textContent = 'Carga atual: N/D';
+                // Remove a carga do Local Storage se o campo estiver vazio
+                localStorage.removeItem('load-' + exercise);
+            }
+        }
+
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
