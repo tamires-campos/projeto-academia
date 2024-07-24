@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Meu Treino da Academia</h1>
+        <h1>Meu Treino 💪🏻🏋🏻‍♀️</h1>
         <button class="menu-toggle" aria-label="Menu">&#9776;</button>
     </header>
     <nav>
@@ -33,6 +33,7 @@
                     <p>Carga: <input id="load-supino" type="number" placeholder="kg">
                     <button onclick="updateLoad('supino')">Definir</button></p>
                     <p id="display-supino">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-supino"> Feito</p>
                 </div>
             </div>
             <!-- Adicione mais exercícios conforme necessário -->
@@ -50,8 +51,10 @@
                     <p>Carga: <input id="load-agachamento" type="number" placeholder="kg">
                     <button onclick="updateLoad('agachamento')">Definir</button></p>
                     <p id="display-agachamento">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-agachamento"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/leg-press.jpeg" alt="Imagem do leg-press">
                 <div class="details">
@@ -60,18 +63,22 @@
                     <p>Carga: <input id="load-leg-press" type="number" placeholder="kg">
                     <button onclick="updateLoad('leg-press')">Definir</button></p>
                     <p id="display-leg-press">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-leg-press"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/cadeira-extensora.jpeg" alt="Imagem da cadeira-extensora">
                 <div class="details">
                     <h3>Cadeira Extensora</h3>
                     <p>3 séries de 12 repetições</p>
-                    <p>Carga: <input id="load-agachamento" type="number" placeholder="kg">
+                    <p>Carga: <input id="load-cadeira-extensora" type="number" placeholder="kg">
                     <button onclick="updateLoad('cadeira-extensora')">Definir</button></p>
                     <p id="display-cadeira-extensora">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-cadeira-extensora"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/cadeira-flexora.jpeg" alt="Imagem da cadeira-flexora">
                 <div class="details">
@@ -80,8 +87,10 @@
                     <p>Carga: <input id="load-cadeira-flexora" type="number" placeholder="kg">
                     <button onclick="updateLoad('cadeira-flexora')">Definir</button></p>
                     <p id="display-cadeira-flexora">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-cadeira-flexora"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/panturrilha-maquina.jpeg" alt="Imagem da panturrilha-maquina">
                 <div class="details">
@@ -90,8 +99,10 @@
                     <p>Carga: <input id="load-panturrilha-maquina" type="number" placeholder="kg">
                     <button onclick="updateLoad('panturrilha-maquina')">Definir</button></p>
                     <p id="display-panturrilha-maquina">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-panturrilha-maquina"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/abdominal-tradicional.jpeg" alt="Imagem do abdominal-tradicional">
                 <div class="details">
@@ -100,8 +111,10 @@
                     <p>Carga: <input id="load-abdominal-tradicional" type="number" placeholder="kg">
                     <button onclick="updateLoad('abdominal-tradicional')">Definir</button></p>
                     <p id="display-abdominal-tradicional">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-abdominal-tradicional"> Feito</p>
                 </div>
             </div>
+            <hr>
             <div class="exercise">
                 <img src="imagens/prancha.jpeg" alt="Imagem da prancha">
                 <div class="details">
@@ -110,6 +123,7 @@
                     <p>Carga: <input id="load-prancha" type="number" placeholder="kg">
                     <button onclick="updateLoad('prancha')">Definir</button></p>
                     <p id="display-prancha">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-prancha"> Feito</p>
                 </div>
             </div>
             <!-- Adicione mais exercícios conforme necessário -->
@@ -125,13 +139,102 @@
                     <p>Carga: <input id="load-puxada-frontal" type="number" placeholder="kg">
                     <button onclick="updateLoad('puxada-frontal')">Definir</button></p>
                     <p id="display-puxada-frontal">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-puxada-frontal"> Feito</p>
                 </div>
             </div>
             <!-- Adicione mais exercícios conforme necessário -->
         </section>
         <!-- QUINTA -->
         <section id="quinta" class="workout">
-            <h2>Quinta-feira - Ombros e Trapézio</h2>
+            <h2>Quinta-feira - Pernas e Abdômem</h2>
+            <div class="exercise">
+                <img src="imagens/agachamento.jpeg" alt="Imagem do agachamento">
+                <div class="details">
+                    <h3>Agachamento Livre</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-agachamento" type="number" placeholder="kg">
+                    <button onclick="updateLoad('agachamento')">Definir</button></p>
+                    <p id="display-agachamento">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-agachamento"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/leg-press.jpeg" alt="Imagem do leg-press">
+                <div class="details">
+                    <h3>Leg press</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-leg-press" type="number" placeholder="kg">
+                    <button onclick="updateLoad('leg-press')">Definir</button></p>
+                    <p id="display-leg-press">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-leg-press"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/cadeira-extensora.jpeg" alt="Imagem da cadeira-extensora">
+                <div class="details">
+                    <h3>Cadeira Extensora</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-cadeira-extensora" type="number" placeholder="kg">
+                    <button onclick="updateLoad('cadeira-extensora')">Definir</button></p>
+                    <p id="display-cadeira-extensora">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-cadeira-extensora"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/cadeira-flexora.jpeg" alt="Imagem da cadeira-flexora">
+                <div class="details">
+                    <h3>Cadeira Flexora</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-cadeira-flexora" type="number" placeholder="kg">
+                    <button onclick="updateLoad('cadeira-flexora')">Definir</button></p>
+                    <p id="display-cadeira-flexora">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-cadeira-flexora"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/panturrilha-maquina.jpeg" alt="Imagem da panturrilha-maquina">
+                <div class="details">
+                    <h3>Elevação de Panturrilha no Aparelho</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-panturrilha-maquina" type="number" placeholder="kg">
+                    <button onclick="updateLoad('panturrilha-maquina')">Definir</button></p>
+                    <p id="display-panturrilha-maquina">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-panturrilha-maquina"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/abdominal-tradicional.jpeg" alt="Imagem do abdominal-tradicional">
+                <div class="details">
+                    <h3>Abidominal Tradicional</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-abdominal-tradicional" type="number" placeholder="kg">
+                    <button onclick="updateLoad('abdominal-tradicional')">Definir</button></p>
+                    <p id="display-abdominal-tradicional">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-abdominal-tradicional"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/prancha.jpeg" alt="Imagem da prancha">
+                <div class="details">
+                    <h3>Isometria na Prancha</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-prancha" type="number" placeholder="kg">
+                    <button onclick="updateLoad('prancha')">Definir</button></p>
+                    <p id="display-prancha">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-prancha"> Feito</p>
+                </div>
+            </div>
+            <!-- Adicione mais exercícios conforme necessário -->
+        </section>
+        <!-- SEXTA -->
+        <section id="sexta" class="workout">
+            <h2>Sexta-feira - Ombros e Trapézio</h2>
             <div class="exercise">
                 <img src="imagens/desenvolvimento-de-ombro.jpeg" alt="Imagem do desenvolvimento-de-ombro">
                 <div class="details">
@@ -140,21 +243,7 @@
                     <p>Carga: <input id="load-desenvolvimento-de-ombro" type="number" placeholder="kg">
                     <button onclick="updateLoad('desenvolvimento-de-ombro')">Definir</button></p>
                     <p id="display-desenvolvimento-de-ombro">Carga atual: N/D</p>
-                </div>
-            </div>
-            <!-- Adicione mais exercícios conforme necessário -->
-        </section>
-        <!-- SEXTA -->
-        <section id="sexta" class="workout">
-            <h2>Sexta-feira - Full Body (Corpo Inteiro)</h2>
-            <div class="exercise">
-                <img src="imagens/burpees.jpeg" alt="Imagem dos burpees">
-                <div class="details">
-                    <h3>Burpees</h3>
-                    <p>3 séries de 12 repetições</p>
-                    <p>Carga: <input id="load-burpees" type="number" placeholder="kg">
-                    <button onclick="updateLoad('burpees')">Definir</button></p>
-                    <p id="display-burpees">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-desenvolvimento-de-ombro"> Feito</p>
                 </div>
             </div>
             <!-- Adicione mais exercícios conforme necessário -->
@@ -167,9 +256,10 @@
                 <div class="details">
                     <h3>Burpees</h3>
                     <p>3 séries de 12 repetições</p>
-                    <p>Carga: <input id="load-sabado-burpees" type="number" placeholder="kg">
+                    <p class="num">Carga: <input id="load-sabado-burpees" type="number" placeholder="kg">
                     <button onclick="updateLoad('sabado-burpees')">Definir</button></p>
                     <p id="display-sabado-burpees">Carga atual: N/D</p>
+                    <p class="checkbox-container"><input type="checkbox" id="done-burpees" class="checkbox"> Feito</p>
                 </div>
             </div>
             <!-- Adicione mais exercícios conforme necessário -->

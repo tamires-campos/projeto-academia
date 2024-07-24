@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #40d144;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -18,7 +18,7 @@ header {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 35px;
     cursor: pointer;
     background: none;
     border: none;
@@ -26,7 +26,7 @@ header {
 }
 
 nav {
-    background-color: #333;
+    background-color: #2d9131;
 }
 
 nav ul {
@@ -71,9 +71,13 @@ main {
 .workout {
     background-color: white;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+}
+
+h2{
+    font-size: 20px;
 }
 
 .exercise {
@@ -95,6 +99,18 @@ main {
 
 .details h3 {
     margin: 0 0 10px;
+}
+
+button{
+    color: white;
+    background-color: #29812c;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input{
+    width: 30px;
 }
 
 .stretching ul {
