@@ -205,10 +205,10 @@
         <section id="quarta" class="workout">
             <h2>Quarta-feira - Costas e Bíceps</h2>
             <ul>
+                <li>Alongamento das Costas: Sentado, alongue-se para frente com as pernas estendidas, tentando alcançar os pés.</li>
                 <li>Alongamento de Bíceps: Estique o braço na frente do corpo e puxe os dedos para baixo com a outra mão.</li>
-                <li>Alongamento do Peitoral: De pé, coloque a mão na parede e gire o corpo na direção oposta, alongando o peito.</li>
-                <li>Alongamento de Tríceps: Eleve um braço e dobre o cotovelo, segurando com a outra mão e puxando gentilmente para alongar o tríceps.</li>
-                <li>Alongamento de Ombros: Cruze um braço sobre o peito e segure com a outra mão, puxando gentilmente.</li>
+                <li>Alongamento do Latíssimo do Dorso: De pé, Levante os braços acima da cabeça e entrelace os dedos, com as palmas das mãos voltadas para cima, Incline o corpo lentamente para um lado.</li>
+                <li>Alongamento de Bíceps: De pé, coloque a mão na parede e gire o corpo na direção oposta, alongando o peito.</li>
             </ul>
 
             <div class="exercise">
@@ -222,6 +222,67 @@
                     <p><input type="checkbox" id="done-puxada-frontal"> Feito</p>
                 </div>
             </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/remada-curvada-com-barra.jpeg" alt="Imagem da remada-curvada-com-barra">
+                <div class="details">
+                    <h3>Remada Curvada com Barra</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-remada-curvada-com-barra" type="number" placeholder="kg">
+                    <button onclick="updateLoad('remada-curvada-com-barra')">Definir</button></p>
+                    <p id="display-remada-curvada-com-barra">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-remada-curvada-com-barra"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/remada-sentada-na-maquina.jpeg" alt="Imagem da remada-sentada-na-maquina">
+                <div class="details">
+                    <h3>Remada Sentada na Máquina</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-remada-sentada-na-maquina" type="number" placeholder="kg">
+                    <button onclick="updateLoad('remada-sentada-na-maquina')">Definir</button></p>
+                    <p id="display-remada-sentada-na-maquina">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-remada-sentada-na-maquina"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/triceps-banco.jpeg" alt="Imagem do triceps-banco">
+                <div class="details">
+                    <h3>Tríceps no Banco</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-triceps-banco" type="number" placeholder="kg">
+                    <button onclick="updateLoad('triceps-banco')">Definir</button></p>
+                    <p id="display-triceps-banco">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-triceps-banco"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/rosca-direta-cabo.jpeg" alt="Imagem da rosca-direta-cabo">
+                <div class="details">
+                    <h3>Rosca Direta na Polia ou Halteres</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-rosca-direta-cabo" type="number" placeholder="kg">
+                    <button onclick="updateLoad('rosca-direta-cabo')">Definir</button></p>
+                    <p id="display-rosca-direta-cabo">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-rosca-direta-cabo"> Feito</p>
+                </div>
+            </div>
+            <hr>
+            <div class="exercise">
+                <img src="imagens/rosca-martelo-cruzado.jpeg" alt="Imagem da rosca-martelo-cruzado">
+                <div class="details">
+                    <h3>Rosca artelo cruzada</h3>
+                    <p>3 séries de 12 repetições</p>
+                    <p>Carga: <input id="load-martelo-cruzado" type="number" placeholder="kg">
+                    <button onclick="updateLoad('rosca-martelo-cruzado')">Definir</button></p>
+                    <p id="display-rosca-martelo-cruzado">Carga atual: N/D</p>
+                    <p><input type="checkbox" id="done-rosca-martelo-cruzado"> Feito</p>
+                </div>
+            </div>
+
             <!-- Adicione mais exercícios conforme necessário -->
         </section>
         <!-- QUINTA -->
@@ -390,7 +451,11 @@
                 'crucifixo',
                 'triceps-pulley',
                 'flexão',
-                'triceps-testa-halteres'
+                'triceps-testa-halteres',
+                'remada-sentada-na-maquina',
+                'remada-curvada-com-barra',
+                'rosca-martelo-cruzado',
+                'triceps-banco'
             ];
             
             exercises.forEach(exercise => {
