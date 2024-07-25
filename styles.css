@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #111;
+    background-color: #184d19;
 }
 
 .menu {
@@ -78,6 +78,17 @@ main {
 
 h2{
     font-size: 20px;
+    text-align: center;
+    background-color: #29812c;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
+}
+
+section ul li {
+    margin: 10px 5px 10px -15px;
 }
 
 .exercise {
